@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black:      #080808;
+  --amber:      #F5A623;
+  --amber-dark: #D4891A;
+  --amber-glow: rgba(245,166,35,0.15);
+  --navy:       #0D0D1A;
+  --surface:    #F9F8F5;
+  --white:      #FFFFFF;
+  --muted:      #6B7280;
+  --border:     rgba(255,255,255,0.08);
+  --glass:      rgba(255,255,255,0.04);
+}
+
+@layer base {
+  body {
+    @apply bg-black-deep text-white font-body selection:bg-amber selection:text-black-deep antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-white;
+  }
+  
+  /* Heading specific clamps for mobile first typography */
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: clamp(1.2rem, 3vw, 1.75rem);
+    line-height: 1.3;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-amber text-black-deep font-semibold px-6 py-3 rounded-full hover:bg-amber-dark transition-all duration-300 min-h-[48px] min-w-[44px];
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent text-white border border-white/20 font-semibold px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 min-h-[48px] min-w-[44px];
+  }
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8;
+  }
+}
+
+/* Simulator Road Perspective */
+.simulator-road {
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.road-dash {
+  animation: roadMove 0.8s linear infinite;
+}
+
+@keyframes roadMove {
+  from { transform: translateY(-100%) perspective(400px) rotateX(20deg); }
+  to   { transform: translateY(100%) perspective(400px) rotateX(20deg); }
+}
+
+.hud-speed { 
+  font-family: var(--font-space-grotesk), monospace;
+  animation: speedCount 3s ease-in-out infinite alternate;
+}
+
+@keyframes speedCount {
+  from { content: "42"; }
+  to   { --n: 67; }
+}
+
+.simulator-screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+}
+
+.simulator-frame {
+  box-shadow: 0 0 60px rgba(245,166,35,0.2), 0 0 120px rgba(245,166,35,0.08);
+}
+
+/* Lenis smooth scrolling styles */
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
