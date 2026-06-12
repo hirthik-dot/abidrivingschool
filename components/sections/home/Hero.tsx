@@ -60,7 +60,7 @@ export function Hero() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="text-lg md:text-xl text-white/60 max-w-xl leading-relaxed">
-              Kallakurichi's premier driving school. Master the road with expert instructors, dual-control vehicles, and state-of-the-art simulator training.
+              sirkali's premier driving school. Master the road with expert instructors, dual-control vehicles, and state-of-the-art simulator training.
             </motion.p>
 
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4">

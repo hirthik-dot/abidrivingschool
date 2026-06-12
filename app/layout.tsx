@@ -25,7 +25,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Abi Driving School | Drive With Confidence",
-  description: "Kallakurichi's premier driving school. We offer training for Two-wheelers, Cars, Heavy Vehicles, and state-of-the-art Simulator training.",
+  description: "sirkali's premier driving school. We offer training for Two-wheelers, Cars, Heavy Vehicles, and state-of-the-art Simulator training.",
 };
 
 export default function RootLayout({
