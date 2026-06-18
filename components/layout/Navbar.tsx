@@ -85,11 +85,15 @@ export function Navbar() {
           </div>
 
           {/* Desktop Right CTA */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-5">
+            <div className="hidden xl:flex text-amber text-xs font-bold border border-amber/30 bg-amber/10 px-3 py-1.5 rounded-full uppercase tracking-widest items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-amber animate-pulse"></span>
+              10+ Years of Experience
+            </div>
             <a href={`tel:${SITE.phone[0].replace(/ /g, '')}`} className="font-medium text-white hover:text-amber transition-colors">
               {SITE.phone[0]}
             </a>
-            <Link href="/contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary py-2 px-4">
               Enroll Now →
             </Link>
           </div>

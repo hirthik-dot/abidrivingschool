@@ -37,7 +37,7 @@ export function Hero() {
           >
             <motion.div variants={fadeUp}>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber/30 bg-amber/10 text-amber text-xs md:text-sm font-mono uppercase tracking-widest">
-                <Star className="w-4 h-4 fill-amber" /> Trusted · Tamil Nadu
+                <Star className="w-4 h-4 fill-amber" /> Trusted · 10+ Years of Experience
               </span>
             </motion.div>
 

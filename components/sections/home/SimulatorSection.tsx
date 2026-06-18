@@ -12,7 +12,7 @@ export function SimulatorSection() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <SectionLabel centered>Real Driving Simulator</SectionLabel>
+          <SectionLabel centered>Sirkali's 1st Real Driving Simulator</SectionLabel>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
