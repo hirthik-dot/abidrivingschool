@@ -10,7 +10,7 @@ export function OwnerSection() {
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <SectionLabel centered>Meet the Founder</SectionLabel>
+          <SectionLabel centered>Meet the Founders</SectionLabel>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -30,56 +30,58 @@ export function OwnerSection() {
           </motion.p>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
-          {/* Owner Images */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
+          {/* Founder 1 */}
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="flex-1 flex gap-4 w-full h-full justify-center items-center"
+            className="glass-card relative p-8 md:p-10 rounded-3xl overflow-hidden group flex flex-col h-full"
           >
-             <div className="flex flex-col gap-4 w-1/2 mt-12">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/5 aspect-[4/5] transform -rotate-3 transition-transform hover:rotate-0 duration-300">
-                   <Image src="/images/Owner.jpeg" alt="Owner" fill className="object-cover" />
-                </div>
-             </div>
-             <div className="flex flex-col gap-4 w-1/2">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-amber/20 aspect-[4/5] transform rotate-3 transition-transform hover:rotate-0 duration-300">
-                   <Image src="/images/owner 2.jpeg" alt="Owner" fill className="object-cover" />
-                </div>
-             </div>
-          </motion.div>
-
-          {/* Visiting Card / Logo Area */}
-          <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex-1 w-full"
-          >
-            <div className="glass-card relative p-8 md:p-10 rounded-3xl overflow-hidden group">
-              {/* Background Glow */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-amber/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
-              
-              <h3 className="text-2xl font-bold mb-8">Our Identity</h3>
-              
-              <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border border-white/10 group-hover:border-amber/40 transition-colors duration-500 bg-white/5">
-                <Image src="/images/Logo.jpeg" alt="Abi Driving School Logo" fill className="object-contain p-4" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-amber/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none group-hover:bg-amber/10 transition-colors duration-500" />
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="relative w-48 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/5 mb-8 transform transition-transform group-hover:scale-105 duration-500">
+                <Image src="/images/Owner.jpeg" alt="Founder 1" fill className="object-cover" />
               </div>
               
-              <div className="mt-8 space-y-4">
-                <p className="text-white/70 leading-relaxed">
-                  The foundation of Abi Driving School is built on trust, patience, and a commitment to creating safer roads. Our goal is to ensure every student leaves with the utmost confidence behind the wheel.
-                </p>
-                <div className="inline-block border-b-2 border-amber pb-1 text-amber font-semibold tracking-wide uppercase text-sm mt-4">
-                  - The Founder
-                </div>
+              <h3 className="text-2xl font-bold mb-2">Founder Name 1</h3>
+              <div className="text-amber font-medium tracking-wide uppercase text-sm mb-6 pb-4 border-b border-white/10 inline-block px-4">
+                Co-Founder & Chief Instructor
               </div>
+              
+              <p className="text-white/70 leading-relaxed max-w-sm">
+                Dummy details for Founder 1. You can update this text in the future with their actual background, experience, and vision for the driving school.
+              </p>
             </div>
           </motion.div>
 
+          {/* Founder 2 */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="glass-card relative p-8 md:p-10 rounded-3xl overflow-hidden group flex flex-col h-full"
+          >
+            <div className="absolute top-0 left-0 w-64 h-64 bg-amber/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/4 pointer-events-none group-hover:bg-amber/10 transition-colors duration-500" />
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="relative w-48 h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber/20 mb-8 transform transition-transform group-hover:scale-105 duration-500">
+                <Image src="/images/owner 2.jpeg" alt="Founder 2" fill className="object-cover" />
+              </div>
+              
+              <h3 className="text-2xl font-bold mb-2">Founder Name 2</h3>
+              <div className="text-amber font-medium tracking-wide uppercase text-sm mb-6 pb-4 border-b border-white/10 inline-block px-4">
+                Co-Founder & Operations Director
+              </div>
+              
+              <p className="text-white/70 leading-relaxed max-w-sm">
+                Dummy details for Founder 2. You can update this text in the future with their actual background, experience, and role in managing the driving school.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

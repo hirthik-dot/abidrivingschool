@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { SITE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -44,9 +45,16 @@ export function Navbar() {
         <div className="container mx-auto px-4 md:px-8 lg:px-16 flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="relative z-[60] flex items-center text-2xl font-display font-bold tracking-tight" onClick={() => setIsOpen(false)}>
-            <span>ABI</span><span className="text-amber">.</span>
-            <span className="ml-2 font-light text-white/80">Driving School</span>
+          <Link href="/" className="relative z-[60] flex items-center gap-3 text-2xl font-display font-bold tracking-tight" onClick={() => setIsOpen(false)}>
+            <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-xl overflow-hidden bg-white/5 border border-white/10 flex items-center justify-center p-1 group-hover:border-amber/40 transition-colors">
+              <Image src="/images/Logo.jpeg" alt="Abi Driving School Logo" fill className="object-cover rounded-lg" />
+            </div>
+            <div className="flex flex-col">
+              <div className="flex items-center leading-none">
+                <span>ABI</span><span className="text-amber">.</span>
+              </div>
+              <span className="text-[10px] md:text-xs font-light text-white/60 tracking-[0.2em] uppercase mt-1">Driving School</span>
+            </div>
           </Link>
 
           {/* Desktop Links */}

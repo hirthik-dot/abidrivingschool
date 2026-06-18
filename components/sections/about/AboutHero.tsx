@@ -14,7 +14,7 @@ export function AboutHero() {
         >
           <SectionLabel centered>Our Story</SectionLabel>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Pioneering Safe Driving<br/>In <span className="text-amber">Kallakurichi</span>
+            Pioneering Safe Driving<br/>In <span className="text-amber">Sirkali</span>
           </h1>
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
             Since 2010, we've been on a mission to transform nervous beginners into confident, responsible drivers who navigate modern roads with ease.

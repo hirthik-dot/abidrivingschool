@@ -13,7 +13,7 @@ export function Footer() {
               <span className="ml-2 font-light text-white/80">Driving School</span>
             </Link>
             <p className="text-white/60 leading-relaxed max-w-sm">
-              Professional driving training in Kallakurichi, Tamil Nadu. Your trusted partner on the road to confidence.
+              Professional driving training in Sirkali, Tamil Nadu. Your trusted partner on the road to confidence.
             </p>
           </div>
 

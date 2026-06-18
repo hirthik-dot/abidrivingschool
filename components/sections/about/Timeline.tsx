@@ -6,7 +6,7 @@ const milestones = [
   {
     year: "2010",
     title: "The Beginning",
-    desc: "Abi Driving School opens its doors in Kallakurichi with just two cars and a vision for better, safer driver education.",
+    desc: "Abi Driving School opens its doors in sirkali with just two cars and a vision for better, safer driver education.",
   },
   {
     year: "2012",

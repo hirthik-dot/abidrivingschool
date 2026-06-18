@@ -15,7 +15,7 @@ export function LocationSection() {
           {/* LEFT: Info */}
           <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
             <SectionLabel>Visit Us</SectionLabel>
-            <h2 className="mb-10">We're Located In <br/><span className="text-amber">Kallakurichi</span></h2>
+            <h2 className="mb-10">We're Located In <br/><span className="text-amber">Sirkali</span></h2>
             
             <div className="flex flex-col gap-8 w-full max-w-md">
               <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
