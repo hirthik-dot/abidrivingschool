@@ -88,7 +88,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-5">
             <div className="hidden xl:flex text-amber text-xs font-bold border border-amber/30 bg-amber/10 px-3 py-1.5 rounded-full uppercase tracking-widest items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber animate-pulse"></span>
-              10+ Years of Experience
+              18+ Years of Experience
             </div>
             <a href={`tel:${SITE.phone[0].replace(/ /g, '')}`} className="font-medium text-white hover:text-amber transition-colors">
               {SITE.phone[0]}

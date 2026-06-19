@@ -162,7 +162,7 @@ export function SimulatorSection() {
           >
             <div className="flex flex-col md:flex-row gap-6 md:gap-12 text-center md:text-left">
               <div>
-                <div className="text-3xl font-black font-display">10+</div>
+                <div className="text-3xl font-black font-display">18+</div>
                 <div className="text-sm font-semibold uppercase tracking-wider opacity-80">Simulator Stations</div>
               </div>
               <div>
